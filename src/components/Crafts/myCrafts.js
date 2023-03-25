@@ -1,43 +1,43 @@
-import bil from "../../images/mainbild.jpg";
-import bil1 from "../../images/topp bil-1-icon.png";
+import toppbil from "../../images/toppbil-1.png";
+import stars from "../../images/Projectstars.png";
+import theend from "../../images/theend.png";
+import chris from "../../images/chris.png";
+import campclub from "../../images/CampClub.png";
+import benjamin from "../../images/benjamin.png";
+import brave from "../../images/brave.png";
+import janet from "../../images/janet.png";
 
 export let myCrafts = [
   {
-    image:
-      "https://benjaminrasoli.github.io/Car-Dealership/images/main/topp%20bil-1.png",
+    image: stars,
+    link: "a",
+  },
+  {
+    image: toppbil,
     link: "https://benjaminrasoli.github.io/Car-Dealership/src/index.html",
   },
   {
-    image: bil,
+    image: janet,
     link: "ö",
   },
   {
-    image: bil1,
+    image: theend,
     link: "ö",
   },
   {
-    image:
-      "https://yt3.googleusercontent.com/oC6wTFArnkQdMqFMRbxsTooHHj1cMoMDG8RPKyVat-1Px0M3xA3Thqj8LWMzhPO3ULX_vR9wLw=s900-c-k-c0x00ffffff-no-rj",
+    image: chris,
     link: "ö",
   },
   {
-    image:
-      "https://yt3.googleusercontent.com/oC6wTFArnkQdMqFMRbxsTooHHj1cMoMDG8RPKyVat-1Px0M3xA3Thqj8LWMzhPO3ULX_vR9wLw=s900-c-k-c0x00ffffff-no-rj",
+    image: campclub,
     link: "ö",
   },
   {
-    image:
-      "https://yt3.googleusercontent.com/oC6wTFArnkQdMqFMRbxsTooHHj1cMoMDG8RPKyVat-1Px0M3xA3Thqj8LWMzhPO3ULX_vR9wLw=s900-c-k-c0x00ffffff-no-rj",
+    image: benjamin,
     link: "ö",
   },
   {
-    image:
-      "https://yt3.googleusercontent.com/oC6wTFArnkQdMqFMRbxsTooHHj1cMoMDG8RPKyVat-1Px0M3xA3Thqj8LWMzhPO3ULX_vR9wLw=s900-c-k-c0x00ffffff-no-rj",
-    link: "ö",
-  },
-  {
-    image:
-      "https://yt3.googleusercontent.com/oC6wTFArnkQdMqFMRbxsTooHHj1cMoMDG8RPKyVat-1Px0M3xA3Thqj8LWMzhPO3ULX_vR9wLw=s900-c-k-c0x00ffffff-no-rj",
+    image: brave,
     link: "ö",
   },
 ];

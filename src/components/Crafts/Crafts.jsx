@@ -17,7 +17,7 @@ function Crafts() {
                 className="imagecontainer"
                 style={{ backgroundImage: `url(${craft.image} )` }}
               >
-                <a href={craft.link} className="imagebutton">
+                <a target="_blank" href={craft.link} className="imagebutton">
                   View <br /> Project
                 </a>
               </div>

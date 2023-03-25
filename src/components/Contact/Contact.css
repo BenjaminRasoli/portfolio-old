@@ -1,9 +1,39 @@
 form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding-bottom: 50px;
+}
+
+.contactnameemail {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.subject {
+  display: flex;
+  justify-content: center;
+}
+
+.subject input {
+  width: 29em;
+}
+
+.message {
+  display: flex;
+  justify-content: center;
+}
+
+.message textarea {
+  width: 30em;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+}
+
+.submit input {
+  width: 15em;
 }
 
 .connect h1 {
@@ -27,8 +57,7 @@ form {
 }
 
 textarea {
-  color: black;
-  border: 1px solid #ccc;
+  color: white;
   border-radius: 4px;
   box-sizing: border-box;
   height: 3em;
@@ -36,23 +65,35 @@ textarea {
   padding: 12px 20px;
   margin: 8px 0;
   overflow: hidden;
+  background-color: #2b2b2b;
+  border: none;
+  font-family: "MS Shell Dlg";
+  font-size: 13px;
 }
 
 input {
-  border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  color: black;
+  color: white;
   padding: 12px 20px;
   margin: 8px 0;
+  background-color: #2b2b2b;
+  border: none;
 }
 
 input[type="submit"] {
-  background-color: grey;
+  background-color: #2b2b2b;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-bottom: 2px solid white;
+ 
 }
 
 input[type="submit"]:hover {
@@ -89,4 +130,10 @@ input[type="submit"]:hover {
     flex-direction: column;
     align-items: center;
   }
+}
+
+.formresponse {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }

@@ -1,23 +1,47 @@
 import "./Contact.css";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const Contact = () => {
+  const notify = () => {
+    result
+      ? toast.success("Your e-mail has been successfully sent. Thank You!", {
+          position: toast.POSITION.BOTTOM_RIGHT,
+          className: "foo-bar",
+        })
+      : toast.error("Please fill in all required fields", {
+          position: toast.POSITION.BOTTOM_RIGHT,
+          className: "foo-bar",
+        });
+    toast.clearWaitingQueue();
+  };
   const form = useRef();
+  const [result, setResult] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
+    if (!form.current.checkValidity()) {
+      form.current.reportValidity();
+      return;
+    }
+
     emailjs
       .sendForm(
-        "service_n3o3f15",
-        "template_9ehgiyk",
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         form.current,
-        "N3Z_Yk1v_VXbhNmO7"
+        process.env.REACT_APP_PUBLIC_KEY
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
+          setResult(true);
+          setTimeout(() => {
+            setResult(false);
+          }, 7000);
+          form.current.reset();
         },
         (error) => {
           console.log(error.text);
@@ -48,12 +72,45 @@ export const Contact = () => {
             <a href="mailto:"> alexander.r2000@hotmail.com</a>
           </p>
         </div>
+        <ul className="contactnameemail">
+          <li>
+            <input
+              type="text"
+              name="user_name"
+              placeholder="Your name"
+              required
+            />
+          </li>
+          <li>
+            <input
+              type="email"
+              name="user_email"
+              placeholder="Email"
+              required
+            />
+          </li>
+        </ul>
+        <ul className="subject">
+          <li>
+            <input type="text" name="subject" placeholder="Subject" required />
+          </li>
+        </ul>
 
-        <input type="text" name="user_name" placeholder="Your name" />
-        <input type="email" name="user_email" placeholder="Email" />
-        <textarea name="message" placeholder="Message" />
-        <input type="submit" value="Send" />
+        <ul className="message">
+          <li>
+            <textarea name="message" placeholder="Message"></textarea>
+            <div className="line"></div>
+          </li>
+        </ul>
+        <ul className="submit">
+          <li>
+            <input onClick={notify} type="submit" value="Send" />
+          </li>
+        </ul>
       </form>
+      <div className="formresponse">
+        <ToastContainer limit={1} toastStyle={{ backgroundColor: "#2b2b2b" }} />
+      </div>
     </>
   );
 };
