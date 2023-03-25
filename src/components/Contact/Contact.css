@@ -1,0 +1,92 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.connect h1 {
+  font-size: 300px;
+  font-family: "Tusker";
+  margin: 0;
+  padding: 0;
+  line-height: 1.1;
+  padding-left: 150px;
+}
+
+.contacttext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  font-size: 30px;
+  font-family: "neu";
+  padding-bottom: 40px;
+  width: 100%;
+}
+
+textarea {
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 3em;
+  width: 14em;
+  padding: 12px 20px;
+  margin: 8px 0;
+  overflow: hidden;
+}
+
+input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: black;
+  padding: 12px 20px;
+  margin: 8px 0;
+}
+
+input[type="submit"] {
+  background-color: grey;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 1350px) {
+  .connect h1 {
+    font-size: 200px;
+  }
+  .connect p,
+  .contacttext p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .connect h1 {
+    font-size: 100px;
+  }
+  .connect p,
+  .contacttext p {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .connect h1 {
+    font-size: 80px;
+    padding-left: 40px;
+  }
+  .connect p,
+  .contacttext p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

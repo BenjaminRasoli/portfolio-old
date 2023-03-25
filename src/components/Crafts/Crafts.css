@@ -1,0 +1,48 @@
+.craftcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 150px;
+}
+
+.imagecontainer {
+  width: 25em;
+  height: 20em;
+  display: flex;
+  filter: brightness(50%);
+  background-size: 100% 100%;
+  transition: 0.5s ease-in-out;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1650px) {
+  .imagecontainer {
+    width: 15em;
+    height: 10em;
+  }
+}
+
+.imagecontainer:hover {
+  background-size: 110% 110%;
+  filter: brightness(100%);
+}
+
+.imagecontainer:hover .imagebutton {
+  opacity: 1;
+}
+
+.imagebutton {
+  background-color: #01fee8;
+  border-radius: 100%;
+  padding: 30px;
+  display: block;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.imagebutton {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}

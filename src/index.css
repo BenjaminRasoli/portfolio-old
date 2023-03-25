@@ -1,13 +1,11 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Tusker"; /*Can be any text*/
+  src: local("TuskerGrotesk-2600Semibold"),
+    url("./fonts/TuskerGrotesk-2600Semibold.ttf") format("truetype");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Neu"; /*Can be any text*/
+  src: local("NeueMontreal-Bold"),
+    url("./fonts/NeueMontreal-Bold.otf") format("opentype");
 }

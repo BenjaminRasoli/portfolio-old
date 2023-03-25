@@ -1,0 +1,40 @@
+.aboutcontainer {
+  color: white;
+  padding-left: 150px;
+  padding-top: 200px;
+}
+
+.aboutcontainer h1 {
+  font-family: "Tusker";
+  font-size: 150px;
+}
+
+.aboutcontainer p {
+  font-family: "Neu";
+  max-width: 20em;
+  font-size: 40px;
+  padding-bottom: 300px;
+}
+
+@media screen and (max-width: 1350px) {
+  .aboutcontainer h1 {
+    font-size: 200px;
+  }
+  .aboutcontainer p {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .aboutcontainer h1 {
+    font-size: 100px;
+  }
+  .aboutcontainer p {
+    font-size: 25px;
+  }
+  .aboutcontainer {
+    padding-left: 10px;
+    max-width: 16em;
+  }
+}
+

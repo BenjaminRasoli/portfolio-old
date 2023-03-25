@@ -1,0 +1,65 @@
+.container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container p {
+  font-size: 40px;
+  font-family: "neu";
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.firsttext {
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+
+.maintext h1 {
+  font-size: 300px;
+  font-family: "Tusker";
+  margin: 0;
+  padding: 0;
+  line-height: 1.1;
+}
+
+.description {
+  font-family: "neu";
+}
+
+@media screen and (max-width: 1350px) {
+  .maintext h1 {
+    font-size: 200px;
+  }
+  .description {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .maintext h1 {
+    font-size: 100px;
+  }
+  .description p {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 750px) {
+
+  .description p {
+   
+    max-width: 10em;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
