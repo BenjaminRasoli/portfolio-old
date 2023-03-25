@@ -3,7 +3,7 @@ import "./About.css";
 function About() {
   return (
     <div id="aboutcontainerid" data-aos="fade-up" data-aos-duration="1000" className="aboutcontainer">
-      <h1>Hello. I am David Patrick David</h1>
+      <h1>Hello. I am Benjamin. Benjamin Rasoli</h1>
       <div>
         <p>
           I use my passion and skills to create digital products and

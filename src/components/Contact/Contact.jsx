@@ -52,7 +52,7 @@ export const Contact = () => {
   return (
     <>
       <div data-aos="fade-right" data-aos-duration="1000" className="connect">
-        <h1> Lets </h1> <h1>Connect </h1>
+        <h1> LET'S </h1> <h1>CONNECT </h1>
       </div>
 
       <form
@@ -69,7 +69,7 @@ export const Contact = () => {
           </p>
           <p>
             Alternatively, shoot me an email at
-            <a href="mailto:"> alexander.r2000@hotmail.com</a>
+            <a href="mailto:"> benjaminrasoli05@gmail.com</a>
           </p>
         </div>
         <ul className="contactnameemail">

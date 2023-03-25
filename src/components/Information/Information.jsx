@@ -5,7 +5,7 @@ function Information() {
     <div className="container">
       <div className="maintext" data-aos="fade-up" data-aos-duration="1000">
         <h1>
-          Fullstack <br /> Developer
+          FULLSTACK <br /> DEVELOPER
         </h1>
       </div>
       <div className="description">

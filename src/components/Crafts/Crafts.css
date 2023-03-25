@@ -6,7 +6,7 @@
   width: 100%;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1650px) {
   .craftcontainer {
     display: flex;
     justify-content: center;
@@ -26,10 +26,17 @@
   align-items: center;
 }
 
-@media screen and (max-width: 1650px) {
+@media screen and (min-width: 1950px) {
   .imagecontainer {
-    width: 15em;
-    height: 10em;
+    width: 30em;
+    height: 25em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .imagecontainer {
+    width: 20em;
+    height: 15em;
   }
 }
 
