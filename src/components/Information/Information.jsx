@@ -10,11 +10,12 @@ function Information() {
       </div>
       <div className="description">
         <p data-aos="fade-left" data-aos-duration="1000">
-          I am a developer and UX/UI designer <br /> based in Italy. I have many
-          years <br />
-          of experience in consulting in <br /> all areas of digital. I love
-          minimal <br />
-          and brutalist design. I love nature, <br /> pizza and art.
+          Hi I'm  Benjamin  <br /> I'm a
+          highly skilled and passionate full-stack developer with a strong
+          background in TypeScript and JavaScript. <br /> My expertise extends
+          to popular frameworks such as React, Node.js, and Angular. <br /> With
+          a proven track record of delivering high-quality software solutions,
+          I'm here to help you turn your ideas into reality.
         </p>
       </div>
     </div>

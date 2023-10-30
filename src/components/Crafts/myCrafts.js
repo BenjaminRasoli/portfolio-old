@@ -6,15 +6,16 @@ import campclub from "../../images/CampClub.png";
 import benjamin from "../../images/benjamin.png";
 import brave from "../../images/brave.png";
 import janet from "../../images/janet.png";
+import dbfm from "../../images/DATABASEFORMOVIES-logos.jpeg";
 
-export let myCrafts = [
+export const myCrafts = [
   {
-    image: stars,
-    link: "a",
+    image: dbfm,
+    link: "https://dbfm.vercel.app/",
   },
   {
     image: toppbil,
-    link: "https://topbil.netlify.app/index.html",
+    link: "https://benjaminrasoli.github.io/Car-Dealership/src/",
   },
   {
     image: janet,

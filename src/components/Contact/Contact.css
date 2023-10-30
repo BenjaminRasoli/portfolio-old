@@ -1,5 +1,8 @@
 form {
   padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contactnameemail {
@@ -9,9 +12,25 @@ form {
   gap: 20px;
 }
 
+.contactnameemail,
+.subject,
+.message,
+.submit {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
 .subject {
   display: flex;
   justify-content: center;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
 }
 
 .subject input {
@@ -24,7 +43,9 @@ form {
 }
 
 .message textarea {
+  resize: vertical;
   width: 30em;
+  min-height: 3em;
 }
 
 .submit {
@@ -56,6 +77,10 @@ form {
   width: 100%;
 }
 
+textarea[name="message"] {
+  resize: vertical;
+}
+
 textarea {
   color: white;
   border-radius: 4px;
@@ -65,7 +90,7 @@ textarea {
   padding: 12px 20px;
   margin: 8px 0;
   overflow: hidden;
-  background-color: #2b2b2b;
+  background-color: black;
   border: none;
   font-family: "MS Shell Dlg";
   font-size: 13px;
@@ -77,12 +102,13 @@ input {
   color: white;
   padding: 12px 20px;
   margin: 8px 0;
-  background-color: #2b2b2b;
+  background-color: black;
   border: none;
 }
 
 input[type="submit"] {
-  background-color: #2b2b2b;
+  /* background-color: #2b2b2b; */
+  background-color: black;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -93,7 +119,6 @@ input:focus,
 textarea:focus {
   outline: none;
   border-bottom: 2px solid white;
- 
 }
 
 input[type="submit"]:hover {

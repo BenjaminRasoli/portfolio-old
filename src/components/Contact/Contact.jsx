@@ -78,7 +78,7 @@ export const Contact = () => {
               type="text"
               name="user_name"
               placeholder="Your name"
-              required
+              
             />
           </li>
           <li>
@@ -86,13 +86,13 @@ export const Contact = () => {
               type="email"
               name="user_email"
               placeholder="Email"
-              required
+              
             />
           </li>
         </ul>
         <ul className="subject">
           <li>
-            <input type="text" name="subject" placeholder="Subject" required />
+            <input type="text" name="subject" placeholder="Subject"  />
           </li>
         </ul>
 
@@ -109,7 +109,7 @@ export const Contact = () => {
         </ul>
       </form>
       <div className="formresponse">
-        <ToastContainer limit={1} toastStyle={{ backgroundColor: "#2b2b2b" }} />
+        <ToastContainer limit={1} toastStyle={{ backgroundColor: "black" }} />
       </div>
     </>
   );

@@ -2,7 +2,6 @@
   padding-top: 100px;
   padding-bottom: 100px;
   margin: 20px;
-  color: white;
   display: flex;
   justify-content: space-between;
 }
@@ -30,6 +29,8 @@
 
 .description {
   font-family: "neu";
+  max-width: 50em;
+  color: black;
 }
 
 @media screen and (max-width: 1350px) {
@@ -50,9 +51,7 @@
   }
 }
 @media screen and (max-width: 750px) {
-
   .description p {
-   
     max-width: 10em;
   }
 }

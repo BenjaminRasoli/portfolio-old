@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: auto auto auto auto;
   justify-content: center;
-  padding-top: 150px;
+  padding-top: 50px;
   width: 100%;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .imagecontainer {
-  width: 25em;
+  width: 22em;
   height: 20em;
   display: flex;
   filter: brightness(60%);
@@ -42,7 +42,7 @@
 
 .imagecontainer:hover {
   background-size: 130% 130%;
-  filter: brightness(150%);
+  filter: brightness(120%);
 }
 
 .imagecontainer:hover .imagebutton {
@@ -50,12 +50,16 @@
 }
 
 .imagebutton {
-  background-color: #01fee8;
+  background-color: black;
   border-radius: 100%;
   padding: 30px;
   display: block;
   opacity: 0;
   transition: 0.5s ease-in-out;
+}
+
+.imageButtonText {
+  font-family: "Neu";
 }
 
 .imagebutton {
