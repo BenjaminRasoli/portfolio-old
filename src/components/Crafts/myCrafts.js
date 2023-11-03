@@ -7,6 +7,8 @@ import benjamin from "../../images/benjamin.png";
 import brave from "../../images/brave.png";
 import janet from "../../images/janet.png";
 import dbfm from "../../images/DATABASEFORMOVIES-logos.jpeg";
+import fgm from "../../images/FreeGamesTracker-logos.jpeg";
+import portfolio from "../../images/herobg-icon.jpg";
 
 export const myCrafts = [
   {
@@ -18,27 +20,27 @@ export const myCrafts = [
     link: "https://benjaminrasoli.github.io/Car-Dealership/src/",
   },
   {
-    image: janet,
-    link: "ö",
+    image: portfolio,
+    link: "https://github.com/BenjaminRasoli/portfolio",
   },
   {
-    image: theend,
-    link: "ö",
+    image: fgm,
+    link: "https://freegamestracker.vercel.app/",
   },
   {
     image: chris,
-    link: "ö",
+    link: "/",
   },
   {
     image: campclub,
-    link: "ö",
+    link: "/",
   },
   {
     image: benjamin,
-    link: "ö",
+    link: "/",
   },
   {
     image: brave,
-    link: "ö",
+    link: "/",
   },
 ];

@@ -42,7 +42,7 @@ function NavBar() {
             </a>
           </li>
           <li>
-            <a target="_blank" href="https://github.com/">
+            <a target="_blank" href="https://github.com/BenjaminRasoli">
               <FaGithub className="github" />
             </a>
           </li>
